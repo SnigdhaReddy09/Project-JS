@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(224, 247, 250);
+}
+
+.loginDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#login {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#icon {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: -30px;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: teal;
+    color: white;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+}
+
+#error {
+    color: lightcoral;
+}
+
+@media (max-width:424px){
+    #login{
+       width: 250px;
+    }
+    input{
+        width: 200px;
+    }
+    button{
+        width: 200px;
+    }
+}
+@media (min-width:425px) and (max-width:767px){
+    #login{
+        width: 300px;
+     }
+     input{
+         width: 250px;
+     }
+     button{
+         width: 250px;
+     }
+}
+@media (min-width:768px) and (max-width:1023px){
+    #login{
+        width: 320px;
+     }
+     input{
+         width: 270px;
+     }
+     button{
+         width: 270px;
+     }
+}
+@media (min-width:1024px) and (max-width:1439px){
+    #login{
+        width: 350px;
+     }
+     input{
+         width: 300px;
+     }
+     button{
+         width: 300px;
+     }
+}
+@media (min-width:1440px){
+    #login{
+        width: 500px;
+     }
+     input{
+         width: 450px;
+     }
+     button{
+         width: 450px;
+     }
+    
+}

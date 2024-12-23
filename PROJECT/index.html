@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="homePage">
+    <h1 id="one">Choose an Image to solve the puzzle</h1>
+    <div id="imageContainer">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkGLtZgjllhdhJUi8EjTdnq-0cOgB_7htCcg&s" alt=""
+        class="images"
+        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkGLtZgjllhdhJUi8EjTdnq-0cOgB_7htCcg&s">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
+        alt="" class="images"
+        data-image="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+      <img
+        src="https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="" class="images"
+        data-image="https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbxPIc0Qu8eO1R0_Puq_kHKvoBRGeXJY5cQ&s" alt=""
+        class="images"
+        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbxPIc0Qu8eO1R0_Puq_kHKvoBRGeXJY5cQ&s">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTROVRmdmDbfKTY1A_Ap4j8BfhLX6bC3PYJ_w&s" alt=""
+        class="images"
+        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTROVRmdmDbfKTY1A_Ap4j8BfhLX6bC3PYJ_w&s">
+    </div>
+  </div>
+
+  <div id="container" style="display: none;">
+    <div id="top">
+      <button id="backButton"><i class="fa-solid fa-arrow-left-long"></i></button>
+      <h1 id="two">Image Puzzle Game</h1>
+    </div>
+    <div id="game">
+      <div id="puzzle"></div>
+      <div id="reference">
+        <img src="" alt="" class="reference-image">
+      </div>
+    </div>
+    <div class="controls">
+      <div id="timer">Time: 00:00</div>
+      <div id="moves">Moves: 0</div>
+      <button id="scramble">Scramble</button>
+      <div id="victorymessage"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
