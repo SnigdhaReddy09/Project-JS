@@ -1,5 +1,6 @@
 let login = document.getElementById('login');
 let entity = document.getElementById("icon")
+let guest = document.getElementById("guestbtn")
 
 entity.onclick = function () {
     if (password.type === "password") {
@@ -27,4 +28,11 @@ login.addEventListener("submit", (e) => {
     } else {
         error.textContent = "Invalid email or password"
     }
+})
+
+guest.addEventListener("click", () => {
+    let guestUser = { name: "Guest User", email: "guest@example.com", password: "guest123" }
+    localStorage.setItem("isLoggedIn", JSON.stringify(guestUser.name))
+    alert("Welcome, Guest!")
+    window.location.href = "../PROJECT/index.html"
 })
